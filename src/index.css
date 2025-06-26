@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Meditative";
+  src: url('police/Meditative.ttf') format('truetype');
+}
+@font-face {
+  font-family: "3D-Grunge";
+  src: url('police/3D Grunge Studio.ttf') format('truetype');
+  }
+@font-face {
+  font-family: 'rela';
+  src: url('police/Saturday Sweat.otf') format('opentype');
+}
+@font-face {
+  font-family: 'war';
+  src: url('police/Thelamonblack.otf') format('truetype');
+}
+
+
+html,body{
+  height: 100%;
+}
+body{
+  background-color: #e4dbdbef;
+}
+
+.nav h1{
+  transform: rotateZ(-01deg);
+  font-family: "war",sans-serif;
+  letter-spacing: 5px;
+  color: rgba(219, 49, 49, 0.856);
+  font-style:normal;
+} 
+.sous-nav{
+  display: flex;
+  list-style: none;
+  width: fit-content;
+  flex-wrap: nowrap;
+}
+
+.sous-nav li {
+  display: flex;
+  list-style: none;
+}
+.sous-nav li a{
+    padding: 5px 25px;
+    text-decoration: none;
+    margin:15px ;
+    color: black;
+    font-weight: bolder;
+    box-shadow: -5px 0 3px 5px #575757;
+    border-radius: 5px;
+    transition: 1s;
+}
+.sous-nav li a:hover{
+  background-color: #97522B;
+  border-radius: 15px;
+  transition: 1s;
+  cursor: pointer;
+}
+#icons{
+  margin: 10px 0 0 25px;
+}
+.connexion button{
+    cursor: pointer;
+    color: aliceblue;
+    background-color: grey;
+    border: none;
+    transition: 0.5s;
+}
+.connexion button:hover{
+  background-color: rgb(185, 53, 53);
+  transition: 0.5s;
+} 
+
+/* Footer */
+
+.foot{
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    margin-top: 30px;
+    width: 100%;
+    box-shadow: 0 0 15px 5px rgb(71, 71, 71);
+    padding: 15px;
+    font-style: normal;
+}
+.foot ul{
+  display: flex;
+  list-style: none;
+  width: fit-content;
+  flex-wrap: nowrap;
+}
+.foot ul li{
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.foot ul li:hover{
+  text-decoration: underline;
+  transition: 1s;
+  cursor: pointer;
+}
+.foot h4{
+    padding: 5px 15px;
+    color: black;
+    font-weight: bolder;
+}
+
+/* Main */
+
+.answer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+}
+.answer header h1{
+  font-family: 'war',sans-serif;
+  font-size: 70px;
+  transform: rotateZ(-01deg);
+  margin-bottom: 30px;
+  color: rgb(216, 80, 80);
+
+}
+.answer section{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.answer main{
+  text-indent: 20px;
+  margin-left: 10px;
+  width: 100%;
+  flex-wrap: nowrap;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.image{
+  width: 60%;
+}
+.image img{
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px 5px black;
+  margin-left: 100px;
+  transition: 1s;
+  margin-top: 25px;
+}
+.image img:hover{
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.police{
+  color: white;
+  font-family: "Meditative",sans-serif;
+  background: linear-gradient(to left right,black,);
+}
+
+/* Animation */
+
+/* .mation1{
+  animation: mation1 6s infinite alternate-reverse;
+}
+.mation2{
+  animation: mation2 6s infinite;
+}
+.mation3{
+  animation: mation3 6s infinite;
+
+} */
+
+.mation1,
+.mation2,
+.mation3{
+      animation: max 10s  infinite ease-in;
+}
+
+@keyframes max {
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateX(-1360px);
+  }
+  50%{
+    transform: translateX(-2690px);
+  }
+  75%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+  
+}
+
+.sha{
+  box-shadow: 0 0 15px 5px rgb(71, 71, 71); 
+}
+
+
+
+
